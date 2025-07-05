@@ -1,88 +1,155 @@
-# airbnb-clone-project
+# 🏠 Airbnb Clone Project
 
-## Project Goals <br>
-<b>User Management:</b> Implement a secure system for user registration, authentication, and profile management.<br>
-<b>Property Management:</b> Develop features for property listing creation, updates, and retrieval.<br>
-<b>Booking System:</b> Create a booking mechanism for users to reserve properties and manage booking details.<br>
-<b>Payment Processing:</b> Integrate a payment system to handle transactions and record payment details.<br>
-<b>Review System:</b> Allow users to leave reviews and ratings for properties.<br>
-<b>Data Optimization:</b> Ensure efficient data retrieval and storage through database optimizations.<br>
+## 🚀 Project Goals
+- **User Management:** Implement a secure system for user registration, authentication, and profile management.  
+- **Property Management:** Develop features for property listing creation, updates, and retrieval.  
+- **Booking System:** Create a booking mechanism for users to reserve properties and manage booking details.  
+- **Payment Processing:** Integrate a payment system to handle transactions and record payment details.  
+- **Review System:** Allow users to leave reviews and ratings for properties.  
+- **Data Optimization:** Ensure efficient data retrieval and storage through database optimizations.  
 
-<br>
+---
 
-# Team Roles <br> 
-### Backend Developer: <br>
-Responsible for implementing API endpoints, database schemas, and business logic. <br>
-### Database Administrator: <br>
-Manages database design, indexing, and optimizations.<br>
-### DevOps Engineer: <br>
-Handles deployment, monitoring, and scaling of the backend services.<br>
-### QA Engineer: <br>
-Ensures the backend functionalities are thoroughly tested and meet quality standards.<br>
+## 👥 Team Roles
 
-# Technology Stack <br>
-<b>Django:<b/> A high-level Python web framework used for building the RESTful API.<br>
-<b>Django REST Framework:<b/> Provides tools for creating and managing RESTful APIs.<br>
-<b>PostgreSQL:<b/> A powerful relational database used for data storage.<br>
-<b>GraphQL:<b/> Allows for flexible and efficient querying of data.<br>
-<b>Celery:<b/> For handling asynchronous tasks such as sending notifications or processing payments.<br>
-<b>Redis:<b/> Used for caching and session management.<br>
-<b>Docker:<b/> Containerization tool for consistent development and deployment environments.<br>
-<b>CI/CD Pipelines:<b/> Automated pipelines for testing and deploying code changes.<br>
+### 🔧 Backend Developer
+Implements API endpoints, database schemas, and business logic.
 
-# Database Design <br>
-<b>Users</b> <br>
+### 🗄️ Database Administrator
+Designs and optimizes the database, including indexing and performance tuning.
 
-GET /users/ - List all users<br>
-POST /users/ - Create a new user<br>
-GET /users/{user_id}/ - Retrieve a specific user<br>
-PUT /users/{user_id}/ - Update a specific user<br>
-DELETE /users/{user_id}/ - Delete a specific user<br>
-<b>Properties </b> <br>
+### 🚀 DevOps Engineer
+Handles deployment, monitoring, scaling, and CI/CD pipeline automation.
 
-GET /properties/ - List all properties<br>
-POST /properties/ - Create a new property<br>
-GET /properties/{property_id}/ - Retrieve a specific property<br>
-PUT /properties/{property_id}/ - Update a specific property<br>
-DELETE /properties/{property_id}/ - Delete a specific property<br>
-<b>Bookings </b> <br>
+### ✅ QA Engineer
+Tests backend functionalities to ensure stability, performance, and correctness.
 
-GET /bookings/ - List all bookings<br>
-POST /bookings/ - Create a new booking<br>
-GET /bookings/{booking_id}/ - Retrieve a specific booking<br>
-PUT /bookings/{booking_id}/ - Update a specific booking<br>
-DELETE /bookings/{booking_id}/ - Delete a specific booking<br>
-<b>Payments </b> <br>
+---
 
-POST /payments/ - Process a payment<br>
-<b>Reviews </b> <br>
+## 🛠️ Technology Stack
 
-GET /reviews/ - List all reviews<br>
-POST /reviews/ - Create a new review<br>
-GET /reviews/{review_id}/ - Retrieve a specific review<br>
-PUT /reviews/{review_id}/ - Update a specific review<br>
-DELETE /reviews/{review_id}/ - Delete a specific review<br>
+- **Django:** High-level Python web framework for building the RESTful API.  
+- **Django REST Framework:** Toolkit for creating and managing RESTful APIs.  
+- **PostgreSQL:** Robust relational database for storing structured data.  
+- **GraphQL:** Enables flexible and efficient querying of nested data.  
+- **Celery:** Handles asynchronous tasks (e.g., email notifications, payment processing).  
+- **Redis:** Used for caching and session management.  
+- **Docker:** Containerization for consistent development and deployment.  
+- **CI/CD Pipelines:** Automates testing and deployment workflows.
 
-# Feature Breakdown <br>
-1. API Documentation <br>
-OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.<br>
-Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.<br>
-GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend.<br>
-2. User Authentication <br>
-Endpoints: /users/, /users/{user_id}/ <br>
-Features: Register new users, authenticate, and manage user profiles.<br>
-3. Property Management <br>
-Endpoints: /properties/, /properties/{property_id}/ <br>
-Features: Create, update, retrieve, and delete property listings. <br>
-4. Booking System <br>
-Endpoints: /bookings/, /bookings/{booking_id}/ <br>
-Features: Make, update, and manage bookings, including check-in and check-out details. <br>
-5. Payment Processing <br>
-Endpoints: /payments/ <br>
-Features: Handle payment transactions related to bookings. <br>
-6. Review System <br>
-Endpoints: /reviews/, /reviews/{review_id}/ <br>
-Features: Post and manage reviews for properties. <br>
-7. Database Optimizations <br>
-Indexing: Implement indexes for fast retrieval of frequently accessed data. <br>
-Caching: Use caching strategies to reduce database load and improve performance. <br>
+---
+
+## 🗃️ Database Design
+
+### 👤 Users
+
+| Method | Endpoint             | Description                |
+|--------|----------------------|----------------------------|
+| GET    | `/users/`            | List all users             |
+| POST   | `/users/`            | Create a new user          |
+| GET    | `/users/{user_id}/`  | Retrieve a specific user   |
+| PUT    | `/users/{user_id}/`  | Update a specific user     |
+| DELETE | `/users/{user_id}/`  | Delete a specific user     |
+
+### 🏠 Properties
+
+| Method | Endpoint                     | Description                    |
+|--------|------------------------------|--------------------------------|
+| GET    | `/properties/`               | List all properties            |
+| POST   | `/properties/`               | Create a new property          |
+| GET    | `/properties/{property_id}/` | Retrieve a specific property   |
+| PUT    | `/properties/{property_id}/` | Update a specific property     |
+| DELETE | `/properties/{property_id}/` | Delete a specific property     |
+
+### 📆 Bookings
+
+| Method | Endpoint                   | Description                  |
+|--------|----------------------------|------------------------------|
+| GET    | `/bookings/`               | List all bookings            |
+| POST   | `/bookings/`               | Create a new booking         |
+| GET    | `/bookings/{booking_id}/`  | Retrieve a specific booking  |
+| PUT    | `/bookings/{booking_id}/`  | Update a specific booking    |
+| DELETE | `/bookings/{booking_id}/`  | Delete a specific booking    |
+
+### 💳 Payments
+
+| Method | Endpoint      | Description             |
+|--------|---------------|-------------------------|
+| POST   | `/payments/`  | Process a payment       |
+
+### ⭐ Reviews
+
+| Method | Endpoint                  | Description                  |
+|--------|---------------------------|------------------------------|
+| GET    | `/reviews/`               | List all reviews             |
+| POST   | `/reviews/`               | Create a new review          |
+| GET    | `/reviews/{review_id}/`   | Retrieve a specific review   |
+| PUT    | `/reviews/{review_id}/`   | Update a specific review     |
+| DELETE | `/reviews/{review_id}/`   | Delete a specific review     |
+
+---
+
+## 🧩 Feature Breakdown
+
+### 1. API Documentation
+- **OpenAPI Standard:** APIs are documented using OpenAPI for clarity and integration support.
+- **Django REST Framework:** Handles all CRUD operations through RESTful endpoints.
+- **GraphQL:** Provides efficient querying and data fetching capabilities.
+
+### 2. User Authentication
+- Endpoints: `/users/`, `/users/{user_id}/`
+- Features: User registration, login, authentication, and profile management.
+
+### 3. Property Management
+- Endpoints: `/properties/`, `/properties/{property_id}/`
+- Features: Create, update, view, and delete property listings.
+
+### 4. Booking System
+- Endpoints: `/bookings/`, `/bookings/{booking_id}/`
+- Features: Manage bookings, check-in/out details, and availability.
+
+### 5. Payment Processing
+- Endpoint: `/payments/`
+- Features: Securely process and record payments for bookings.
+
+### 6. Review System
+- Endpoints: `/reviews/`, `/reviews/{review_id}/`
+- Features: Post, retrieve, and manage user-generated property reviews.
+
+### 7. Database Optimization
+- **Indexing:** Accelerates querying for frequently accessed data.
+- **Caching:** Uses Redis to reduce load and improve response times.
+
+---
+
+## 🔐 API Security
+
+Securing our API is essential to protect users, ensure system integrity, and build trust. The following security practices are in place:
+
+### 1. Authentication
+- **What it does:** Verifies user or system identity.
+- **How it's implemented:** OAuth 2.0 and JWT-based authentication.
+- **Why it's important:** Prevents unauthorized access to user data and services.
+
+### 2. Authorization
+- **What it does:** Controls access to resources.
+- **How it's implemented:** Role-based access control (RBAC).
+- **Why it's important:** Ensures users can only access allowed features.
+
+### 3. Rate Limiting
+- **What it does:** Limits excessive or abusive requests.
+- **How it's implemented:** Middleware and tools like Redis.
+- **Why it's important:** Prevents DDoS, brute-force attacks, and ensures fair use.
+
+### 4. Data Encryption
+- **What it does:** Secures data in transit and at rest.
+- **How it's implemented:** HTTPS for all communication, bcrypt for password hashing.
+- **Why it's important:** Protects sensitive data from interception and tampering.
+
+### 5. Input Validation & Sanitization
+- **What it does:** Filters and validates incoming data.
+- **How it's implemented:** Validation rules at all API endpoints.
+- **Why it's important:** Prevents injection attacks (SQLi, XSS, etc.).
+
+---
+
