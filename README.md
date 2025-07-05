@@ -147,6 +147,27 @@ Securing our API is essential to protect users, ensure system integrity, and bui
 - **Why it's important:** Protects sensitive data from interception and tampering.
 
 ### 5. Input Validation & Sanitization
+
+---
+
+## 🔄 CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying code. They help ensure that new changes are reliably integrated into the main codebase and deployed without manual intervention.
+
+### 🔧 Why It's Important
+- **Consistency:** Automates testing and deployment, reducing human error.
+- **Speed:** Enables faster development cycles with automated deployments.
+- **Quality Assurance:** Runs tests on each commit to detect bugs early.
+- **Team Collaboration:** Ensures that every team member works on a tested, up-to-date codebase.
+
+### 🛠️ Tools Used
+- **GitHub Actions:** Automates testing, building, and deployment workflows.
+- **Docker:** Ensures consistent environments across development, testing, and production.
+- **Docker Compose:** Simplifies multi-container setups (e.g., app + database + Redis).
+- **Heroku / AWS / DigitalOcean:** Possible deployment targets for hosting the app.
+
+---
+
 - **What it does:** Filters and validates incoming data.
 - **How it's implemented:** Validation rules at all API endpoints.
 - **Why it's important:** Prevents injection attacks (SQLi, XSS, etc.).
