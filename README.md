@@ -33,32 +33,32 @@ Ensures the backend functionalities are thoroughly tested and meet quality stand
 # Database Design <br>
 <b>Users</b> <br>
 
-GET /users/ - List all users
-POST /users/ - Create a new user
-GET /users/{user_id}/ - Retrieve a specific user
-PUT /users/{user_id}/ - Update a specific user
-DELETE /users/{user_id}/ - Delete a specific user
+GET /users/ - List all users<br>
+POST /users/ - Create a new user<br>
+GET /users/{user_id}/ - Retrieve a specific user<br>
+PUT /users/{user_id}/ - Update a specific user<br>
+DELETE /users/{user_id}/ - Delete a specific user<br>
 <b>Properties </b> <br>
 
-GET /properties/ - List all properties
-POST /properties/ - Create a new property
-GET /properties/{property_id}/ - Retrieve a specific property
-PUT /properties/{property_id}/ - Update a specific property
-DELETE /properties/{property_id}/ - Delete a specific property
+GET /properties/ - List all properties<br>
+POST /properties/ - Create a new property<br>
+GET /properties/{property_id}/ - Retrieve a specific property<br>
+PUT /properties/{property_id}/ - Update a specific property<br>
+DELETE /properties/{property_id}/ - Delete a specific property<br>
 <b>Bookings </b> <br>
 
-GET /bookings/ - List all bookings
-POST /bookings/ - Create a new booking
-GET /bookings/{booking_id}/ - Retrieve a specific booking
-PUT /bookings/{booking_id}/ - Update a specific booking
-DELETE /bookings/{booking_id}/ - Delete a specific booking
+GET /bookings/ - List all bookings<br>
+POST /bookings/ - Create a new booking<br>
+GET /bookings/{booking_id}/ - Retrieve a specific booking<br>
+PUT /bookings/{booking_id}/ - Update a specific booking<br>
+DELETE /bookings/{booking_id}/ - Delete a specific booking<br>
 <b>Payments </b> <br>
 
-POST /payments/ - Process a payment
+POST /payments/ - Process a payment<br>
 <b>Reviews </b> <br>
 
-GET /reviews/ - List all reviews
-POST /reviews/ - Create a new review
-GET /reviews/{review_id}/ - Retrieve a specific review
-PUT /reviews/{review_id}/ - Update a specific review
-DELETE /reviews/{review_id}/ - Delete a specific review
+GET /reviews/ - List all reviews<br>
+POST /reviews/ - Create a new review<br>
+GET /reviews/{review_id}/ - Retrieve a specific review<br>
+PUT /reviews/{review_id}/ - Update a specific review<br>
+DELETE /reviews/{review_id}/ - Delete a specific review<br>
