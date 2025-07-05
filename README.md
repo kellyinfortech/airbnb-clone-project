@@ -1,6 +1,6 @@
 # airbnb-clone-project
 
-##🏆 Project Goals <br>
+## Project Goals <br>
 <b>User Management:</b> Implement a secure system for user registration, authentication, and profile management.<br>
 <b>Property Management:</b> Develop features for property listing creation, updates, and retrieval.<br>
 <b>Booking System:</b> Create a booking mechanism for users to reserve properties and manage booking details.<br>
