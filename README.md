@@ -21,11 +21,11 @@ Handles deployment, monitoring, and scaling of the backend services.<br>
 Ensures the backend functionalities are thoroughly tested and meet quality standards.<br>
 
 # Technology Stack <br>
-Django: A high-level Python web framework used for building the RESTful API.
-Django REST Framework: Provides tools for creating and managing RESTful APIs.
-PostgreSQL: A powerful relational database used for data storage.
-GraphQL: Allows for flexible and efficient querying of data.
-Celery: For handling asynchronous tasks such as sending notifications or processing payments.
-Redis: Used for caching and session management.
-Docker: Containerization tool for consistent development and deployment environments.
-CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+<b>Django:<b/> A high-level Python web framework used for building the RESTful API.<br>
+<b>Django REST Framework:<b/> Provides tools for creating and managing RESTful APIs.<br>
+<b>PostgreSQL:<b/> A powerful relational database used for data storage.<br>
+<b>GraphQL:<b/> Allows for flexible and efficient querying of data.<br>
+<b>Celery:<b/> For handling asynchronous tasks such as sending notifications or processing payments.<br>
+<b>Redis:<b/> Used for caching and session management.<br>
+<b>Docker:<b/> Containerization tool for consistent development and deployment environments.<br>
+<b>CI/CD Pipelines:<b/> Automated pipelines for testing and deploying code changes.<br>
